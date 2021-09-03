@@ -1,6 +1,6 @@
 /**********************************************************************
 
-Using an advanced array method of your choice, write a function called
+Using an advanced array method of your choice, write a function called advance
 that accepts an array and a callback and returns a new array. This new array
 should hold the results of passing each element through the callback.
 
