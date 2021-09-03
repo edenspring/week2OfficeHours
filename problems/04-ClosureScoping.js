@@ -14,7 +14,7 @@ instructorLocations("Hector", "Union City") // {"Bill" : "Pittsburgh", "Adam" : 
 
  *********************************************************************/
 
-const objectFactory = () => {
+const objectFactory = () => { //solved
   const obj = {}
   return (key, value) => {
     obj[key] = value;
