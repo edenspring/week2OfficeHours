@@ -61,12 +61,12 @@ const petArray = [
   }
 ]
 
-// function fuzzyFinder(arr) { //reduce solve
-//   return arr.reduce((accum, ele) => {
-//     if (ele.name.toLowerCase().includes("fuzzy")) accum++
-//     return accum
-//   }, 0)
-// }
+function fuzzyFinder(arr) { //reduce solve
+  return arr.reduce((accum, ele) => {
+    if (ele.name.toLowerCase().includes("fuzzy")) accum++
+    return accum
+  }, 0)
+}
 
 // const fuzzyFinder = (arr) => { //forEach solve
 //   let count = 0
