@@ -15,6 +15,20 @@ instructorLocations("Hector", "Union City") // {"Bill" : "Pittsburgh", "Adam" : 
  *********************************************************************/
 
 //Your code here
+const objectFactory = () => { //solved
+  const obj = {}
+  return (key, value) => {
+    obj[key] = value;
+    return obj;
+  }
+}
+
+const instructorLocations = objectFactory()
+console.log(instructorLocations("Bill", "Pittsburgh")) // {"Bill" : "Pittsburgh"}
+console.log(instructorLocations("Adam", "LA")) // {"Bill" : "Pittsburgh", "Adam" : "LA"}
+console.log(instructorLocations("Jeff", "Milwaukee")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee"}
+console.log(instructorLocations("Schuler", "Chicago")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee", "Schuler" : "Chicago"}
+console.log(instructorLocations("Hector", "Union City")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee", "Schuler" : "Chicago", "Hector" : "Union City"}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
