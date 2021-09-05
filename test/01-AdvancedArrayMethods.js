@@ -12,16 +12,28 @@ describe("advance()", function () {
   const arr2 = ["Hi", "there", "let's", "use", "strings"];
   const angryGoose = (word) => word + " " + "HONK!";
 
-  const mapSpy = chai.spy.on(Array.prototype, "map");
+
+
+  let result1;
+  let result2;
+  try {
+    result = advance(arr1, doubler);
+  } catch {
+    result = null;
+  }
+  try {
+    result2 = advance(arr2, angryGoose);
+  } catch {
+    result2 = null;
+  }
+  it("should call upon an advanced array method", function () {
+    const mapSpy = chai.spy.on(Array.prototype, "map");
   const forEachSpy = chai.spy.on(Array.prototype, "forEach");
   const reduceSpy = chai.spy.on(Array.prototype, "reduce");
   const filterSpy = chai.spy.on(Array.prototype, "filter");
-
-  let result1 = advance(arr1, doubler);
-  let result2 = advance(arr2, angryGoose);
-  it("should call upon an advanced array method", function () {
     expect(
       (() => {
+        if(advance) advance([1], (el)=> el)
         return (
           mapSpy.__spy.called ||
           forEachSpy.__spy.called ||

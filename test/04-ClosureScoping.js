@@ -6,7 +6,9 @@ chai.use(spies);
 const objectFactory = require("../problems/04-ClosureScoping.js");
 
 describe("objectFactory()", function () {
-  const res = objectFactory();
+  let res
+  if(objectFactory) res = objectFactory()
+  
   it("should return a function when invoked", () => {
     expect(res).to.be.a("function");
   });

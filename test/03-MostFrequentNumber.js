@@ -12,20 +12,23 @@ describe("mostFrequent()", function () {
   const numsArr2 = [2, 2, 2, 2, 4, 5, 6, 7, 8, 9, 1];
   const numsArr3 = [1, 2, 3, 3, 4];
 
-  const res = mostFrequent(numsArr);
-  const res2 = mostFrequent(numsArr2);
-  const res3 = mostFrequent(numsArr3);
-  it("should return a number", ()=>{
-    expect(Number(res)).to.not.eql(NaN)
-    expect(Number(res)).to.be.an("number")
-    expect(Number(res)).to.not.eql(NaN)
-    expect(Number(res2)).to.be.an("number")
-    expect(Number(res)).to.not.eql(NaN)
-    expect(Number(res3)).to.be.an("number")
-  })
-  it("should return the number that appears more frequently in the given array", function() {
-    expect(Number(res)).to.eql(5)
-    expect(Number(res2)).to.eql(2)
-    expect(Number(res3)).to.eql(3)
-  })
+  let res, res2, res3;
+  if (mostFrequent) {
+    res = mostFrequent(numsArr);
+    res2 = mostFrequent(numsArr2);
+    res3 = mostFrequent(numsArr3);
+  }
+  it("should return a number", () => {
+    expect(Number(res)).to.not.eql(NaN);
+    expect(Number(res)).to.be.an("number");
+    expect(Number(res)).to.not.eql(NaN);
+    expect(Number(res2)).to.be.an("number");
+    expect(Number(res)).to.not.eql(NaN);
+    expect(Number(res3)).to.be.an("number");
+  });
+  it("should return the number that appears more frequently in the given array", function () {
+    expect(Number(res)).to.eql(5);
+    expect(Number(res2)).to.eql(2);
+    expect(Number(res3)).to.eql(3);
+  });
 });

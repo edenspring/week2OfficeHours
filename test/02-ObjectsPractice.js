@@ -15,8 +15,18 @@ describe("fuzzyFinder()", function () {
     { name: "adam lovett" },
     { name: "jeff granof" },
   ];
-  const result = fuzzyFinder(pets);
-  const result2 = fuzzyFinder([]);
+  let result;
+  let result2;
+  try {
+    result = fuzzyFinder(pets);
+  } catch {
+    result = null;
+  }
+  try {
+    result2 = fuzzyFinder([]);
+  } catch {
+    result2 = null;
+  };
   it('should return the number of times the word "fuzzy" appears in all pet names', function () {
     expect(result).to.eql(5);
     expect(result2).to.eql(0);
