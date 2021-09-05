@@ -17,9 +17,9 @@ describe("advance()", function () {
   let result1;
   let result2;
   try {
-    result = advance(arr1, doubler);
+    result1 = advance(arr1, doubler);
   } catch {
-    result = null;
+    result1 = null;
   }
   try {
     result2 = advance(arr2, angryGoose);
