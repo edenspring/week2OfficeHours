@@ -28,3 +28,12 @@ console.log(instructorLocations("Adam", "LA")) // {"Bill" : "Pittsburgh", "Adam"
 console.log(instructorLocations("Jeff", "Milwaukee")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee"}
 console.log(instructorLocations("Schuler", "Chicago")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee", "Schuler" : "Chicago"}
 console.log(instructorLocations("Hector", "Union City")) // {"Bill" : "Pittsburgh", "Adam" : "LA", "Jeff" : "Milwaukee", "Schuler" : "Chicago", "Hector" : "Union City"}
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+try {
+  module.exports = objectFactory;
+} catch (e) {
+  // catch the ref err
+  module.exports = null;
+}
