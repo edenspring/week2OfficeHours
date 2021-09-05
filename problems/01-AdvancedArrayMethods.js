@@ -18,7 +18,7 @@ console.log(advance(arr2, angryGoose)) // ["Hi HONK!",
 
  *********************************************************************/
 
-                                           // const advance = (arr, cb) => arr.map(cb) // .map solve
+const advance = (arr, cb) => arr.map(cb) // .map solve
 
 
 // const advance = (arr, cb) => arr.reduce((accum, ele) => { // .reduce solve
@@ -32,10 +32,19 @@ console.log(advance(arr2, angryGoose)) // ["Hi HONK!",
 //   return result;
 // }
 
-const arr1 = [1,2,3,4]
-const doubler = (num) => num * 2
-console.log(advance(arr1, doubler)) // [2,4,6,8]
+// const arr1 = [1,2,3,4]
+// const doubler = (num) => num * 2
+// console.log(advance(arr1, doubler)) // [2,4,6,8]
 
-const arr2 = ["Hi", "there", "let's", "use", "strings"]
-const angryGoose = (word) => word + " " + "HONK!"
-console.log(advance(arr2, angryGoose)) // ["Hi HONK!", "there HONK!", "let's HONK!", "use HONK!", "strings HONK!"]
+// const arr2 = ["Hi", "there", "let's", "use", "strings"]
+// const angryGoose = (word) => word + " " + "HONK!"
+// console.log(advance(arr2, angryGoose)) // ["Hi HONK!", "there HONK!", "let's HONK!", "use HONK!", "strings HONK!"]
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+try {
+  module.exports = advance;
+} catch (e) {
+  // catch the ref err
+  module.exports = null;
+}
