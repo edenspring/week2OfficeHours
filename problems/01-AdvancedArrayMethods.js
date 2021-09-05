@@ -17,3 +17,15 @@ console.log(advance(arr2, angryGoose)) // ["Hi HONK!",
                                            "strings HONK!"]
 
  *********************************************************************/
+
+//Your code here
+
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+try {
+  module.exports = advance;
+} catch (e) {
+  // catch the ref err
+  module.exports = null;
+}

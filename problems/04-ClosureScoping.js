@@ -14,3 +14,14 @@ instructorLocations("Hector", "Union City") // {"Bill" : "Pittsburgh", "Adam" : 
 
  *********************************************************************/
 
+//Your code here
+
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+try {
+  module.exports = objectFactory;
+} catch (e) {
+  // catch the ref err
+  module.exports = null;
+}

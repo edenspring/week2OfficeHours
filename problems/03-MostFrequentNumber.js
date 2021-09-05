@@ -9,3 +9,15 @@ const numsArr = [1, 1, 5, 1, 2, 3, 4, 5, 5, 6, 5, 7, 8, 9, 9, 5, 2, 3, 5, 4, 1];
 console.log(mostFrequent(numsArr)) // 5
 
   *********************************************************************/
+
+//Your code here
+
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+
+try {
+  module.exports = mostFrequent;
+} catch (e) {
+  // catch the ref err
+  module.exports = null;
+}
