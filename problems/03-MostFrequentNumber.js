@@ -12,7 +12,6 @@ console.log(mostFrequent(numsArr)) // 5
 
 //Your code here
 
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

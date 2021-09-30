@@ -20,8 +20,6 @@ console.log(advance(arr2, angryGoose)) // ["Hi HONK!",
 
 //Your code here
 
-
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

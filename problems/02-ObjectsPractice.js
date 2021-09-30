@@ -39,7 +39,6 @@ You may want to use .toLowerCase() or toUpperCase() when testing strings
 
 //Your code here
 
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

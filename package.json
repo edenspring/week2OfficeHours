@@ -1,0 +1,26 @@
+{
+  "name": "week2officehours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edenspring/week2OfficeHours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edenspring/week2OfficeHours/issues"
+  },
+  "homepage": "https://github.com/edenspring/week2OfficeHours#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-spies": "^1.0.0"
+  }
+}

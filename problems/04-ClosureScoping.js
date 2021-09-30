@@ -16,7 +16,6 @@ instructorLocations("Hector", "Union City") // {"Bill" : "Pittsburgh", "Adam" : 
 
 //Your code here
 
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
