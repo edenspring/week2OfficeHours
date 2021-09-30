@@ -19,12 +19,7 @@ console.log(advance(arr2, angryGoose)) // ["Hi HONK!",
  *********************************************************************/
 
 //Your code here
-let advance = (array, callback) => {
-  let result = array.map(function(ele){
-    return callback(ele);
-  })
-  return result;
-}
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
